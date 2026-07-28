@@ -923,3 +923,39 @@ main.container,
   border: 1px solid var(--pink);
   border-radius: 12px;
 }
+
+
+.message-invite {
+  align-self: start;
+}
+
+.message-invite p {
+  margin: 0 0 14px;
+}
+
+.google-form-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: min(420px, 100%);
+  margin: 22px auto 0;
+  padding: 13px 18px;
+  color: white;
+  text-decoration: none;
+  font-weight: 800;
+  background: var(--pink);
+  border-radius: 999px;
+  transition: transform .2s ease, opacity .2s ease;
+}
+
+.google-form-button:hover,
+.google-form-button:focus-visible {
+  transform: translateY(-2px);
+  opacity: .92;
+}
+
+@media (max-width: 620px) {
+  .google-form-button {
+    width: 100%;
+  }
+}

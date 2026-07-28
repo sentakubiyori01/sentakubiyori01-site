@@ -273,44 +273,10 @@
     renderWorks();
   }
 
-  function initMessageForm() {
-    const form = document.getElementById("messageForm");
-    if (!form) return;
-
-    const status = document.getElementById("formStatus");
-
-    form.addEventListener("submit", event => {
-      event.preventDefault();
-
-      const formData = new FormData(form);
-      const name = String(formData.get("name") || "匿名").trim() || "匿名";
-      const message = String(formData.get("message") || "").trim();
-      const replyEmail = String(formData.get("email") || "").trim();
-
-      if (!message) {
-        status.textContent = "メッセージを入力してください。";
-        return;
-      }
-
-      const subject = `【せんたくびより】サイトからのメッセージ（${name}さん）`;
-      const body = [
-        `お名前：${name}`,
-        replyEmail ? `返信用メール：${replyEmail}` : "返信用メール：未入力",
-        "",
-        "メッセージ：",
-        message
-      ].join("\n");
-
-      const mailto = `mailto:${CONTACT_EMAIL}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
-      status.textContent = "メールアプリを開きます。内容を確認して送信してください。";
-      window.location.href = mailto;
-    });
-  }
 
   document.addEventListener("DOMContentLoaded", () => {
     renderNews();
     renderGuestbook();
     initWorks();
-    initMessageForm();
   });
 })();

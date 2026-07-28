@@ -164,3 +164,31 @@ python -m http.server 8000
 ```
 
 その後 `http://localhost:8000` を開きます。
+
+
+## 第五版：Googleフォーム連携
+
+メッセージ送信はGoogleフォームへ変更しました。
+
+フォームURL：
+
+```text
+https://docs.google.com/forms/d/e/1FAIpQLSedOW4V_mHNqN5sh_c_A3IC-OZR1ZAeZFLhigSjHvtuf6jIUA/viewform?usp=publish-editor
+```
+
+- 訪問者はGoogleフォームからメッセージを送信
+- 管理者が内容を確認
+- `data/guestbook.json` に返信を追加
+- ホームには最新2件、メッセージページには全件を自動表示
+
+返信を追加するときは `data/guestbook.json` に次の形式で追記します。
+
+```json
+{
+  "name": "匿名さん",
+  "date": "2026-08-01",
+  "displayDate": "2026.08.01",
+  "message": "いただいたメッセージ",
+  "reply": "ここにお返事"
+}
+```

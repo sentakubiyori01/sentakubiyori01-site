@@ -46,37 +46,32 @@
 
       <main id="main" class="subpage-main">
         <div class="guestbook-layout">
-          <section class="panel" aria-labelledby="form-title">
-            <h2 id="form-title">書き込み</h2>
+          <section class="panel message-invite" aria-labelledby="form-title">
+            <h2 id="form-title">メッセージを送る</h2>
+            <p>
+              作品の感想やひとこと、イベントで見た感想などを
+              Googleフォームから送っていただけます。
+            </p>
+            <p>
+              お名前は任意です。いただいたメッセージへのお返事は、
+              このページに掲載します。
+            </p>
 
-            <form class="message-form" id="messageForm" novalidate>
-              <label>
-                お名前
-                <input type="text" name="name" maxlength="40" placeholder="匿名でもOK">
-              </label>
-
-              <label>
-                メッセージ
-                <textarea name="message" required maxlength="1000" placeholder="作品の感想など"></textarea>
-              </label>
-
-              <label>
-                返信用メール
-                <input type="email" name="email" placeholder="非公開・任意">
-                <small>サイト上で返信するだけなら入力不要です。</small>
-              </label>
-
-              <button class="submit-button" type="submit">メールで送る</button>
-              <p class="form-status" id="formStatus" aria-live="polite"></p>
-            </form>
+            <a class="google-form-button"
+               href="https://docs.google.com/forms/d/e/1FAIpQLSedOW4V_mHNqN5sh_c_A3IC-OZR1ZAeZFLhigSjHvtuf6jIUA/viewform?usp=publish-editor"
+               target="_blank"
+               rel="noopener noreferrer">
+              Googleフォームを開く →
+            </a>
 
             <div class="notice-box">
-              送信ボタンを押すとメールアプリが開きます。内容を確認して送信してください。受け取ったメッセージは確認後、このページへ掲載します。
+              フォームは別タブで開きます。掲載を希望しない内容や個人情報は、
+              サイト上には掲載しません。
             </div>
           </section>
 
           <section class="panel" aria-labelledby="replies-title">
-            <h2 id="replies-title">いただいたメッセージと返信</h2>
+            <h2 id="replies-title">いただいたメッセージへのお返事</h2>
 
             <div class="guestbook-list" id="guestbookArchive"><p>読み込み中です…</p></div>
           </section>
