@@ -34,51 +34,7 @@
       }
     ]
   },
-  {
-    "id": 5,
-    "title": "レイズ",
-    "cover": "assets/work-2.svg",
-    "categories": [
-      "original",
-      "deformed",
-      "prototype"
-    ],
-    "categoryLabel": "オリジナル",
-    "description": "制作中のオリジナルキャラクターです。現在は表面処理工程です。",
-    "height": "約130mm",
-    "material": "光造形レジン",
-    "year": "2026",
-    "images": [
-      "assets/work-2.svg",
-      "assets/detail-3.svg",
-      "assets/detail-4.svg",
-      "assets/detail-5.svg"
-    ],
-    "imageLabels": [
-      "トップ",
-      "3Dモデル",
-      "分割",
-      "仮組み"
-    ],
-    "timeline": [
-      {
-        "date": "2026.07.18",
-        "label": "モデリング完了"
-      },
-      {
-        "date": "2026.07.21",
-        "label": "分割完了"
-      },
-      {
-        "date": "2026.07.24",
-        "label": "出力完了"
-      },
-      {
-        "date": "2026.07.27",
-        "label": "仮組み完了"
-      }
-    ]
-  },
+  
   {
     "id": 4,
     "title": "女子高生",
