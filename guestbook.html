@@ -45,7 +45,7 @@
       </header>
 
       <main id="main" class="subpage-main">
-        <div class="guestbook-layout">
+        <div class="guestbook-stack">
           <section class="panel message-invite" aria-labelledby="form-title">
             <h2 id="form-title">メッセージを送る</h2>
             <p>
@@ -74,6 +74,11 @@
             <h2 id="replies-title">いただいたメッセージへのお返事</h2>
 
             <div class="guestbook-list" id="guestbookArchive"><p>読み込み中です…</p></div>
+            <nav class="guestbook-pagination" aria-label="お返事一覧ページ">
+              <button type="button" id="guestbookPrev" aria-label="前のページ">‹</button>
+              <div id="guestbookPageNumbers"></div>
+              <button type="button" id="guestbookNext" aria-label="次のページ">›</button>
+            </nav>
           </section>
         </div>
       </main>

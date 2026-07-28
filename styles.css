@@ -959,3 +959,72 @@ main.container,
     width: 100%;
   }
 }
+
+
+/* v6: メッセージ送信を上段、お返事一覧を下段へ */
+.guestbook-stack {
+  display: grid;
+  gap: 18px;
+}
+
+.guestbook-stack > .panel {
+  width: 100%;
+}
+
+.message-invite {
+  align-self: auto;
+}
+
+.guestbook-pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  margin-top: 22px;
+}
+
+.guestbook-pagination > div {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 7px;
+}
+
+.guestbook-pagination button {
+  min-width: 40px;
+  min-height: 40px;
+  padding: 7px 12px;
+  color: var(--blue);
+  background: white;
+  border: 1px solid var(--line);
+  border-radius: 999px;
+}
+
+.guestbook-pagination button:hover,
+.guestbook-pagination button:focus-visible {
+  color: var(--pink);
+  border-color: var(--pink);
+}
+
+.guestbook-pagination button.is-current {
+  color: white;
+  background: var(--pink);
+  border-color: var(--pink);
+}
+
+.guestbook-pagination button:disabled {
+  opacity: .4;
+  cursor: not-allowed;
+}
+
+@media (max-width: 620px) {
+  .guestbook-pagination {
+    gap: 6px;
+  }
+
+  .guestbook-pagination button {
+    min-width: 36px;
+    min-height: 36px;
+    padding: 6px 10px;
+  }
+}

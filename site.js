@@ -104,8 +104,67 @@
       if (homeList) {
         homeList.innerHTML = sorted.slice(0, 2).map(entry => card(entry, true)).join("");
       }
+
       if (archive) {
-        archive.innerHTML = sorted.map(entry => card(entry, false)).join("");
+        const perPage = 10;
+        let currentPage = 1;
+        const prevButton = document.getElementById("guestbookPrev");
+        const nextButton = document.getElementById("guestbookNext");
+        const pageNumbers = document.getElementById("guestbookPageNumbers");
+
+        const renderArchivePage = () => {
+          const pageCount = Math.max(1, Math.ceil(sorted.length / perPage));
+          currentPage = Math.min(currentPage, pageCount);
+
+          const start = (currentPage - 1) * perPage;
+          archive.innerHTML = sorted
+            .slice(start, start + perPage)
+            .map(entry => card(entry, false))
+            .join("");
+
+          if (pageNumbers) {
+            pageNumbers.innerHTML = Array.from({ length: pageCount }, (_, index) => {
+              const page = index + 1;
+              return `<button type="button" data-guestbook-page="${page}" class="${page === currentPage ? "is-current" : ""}" aria-label="${page}ページ">${page}</button>`;
+            }).join("");
+          }
+
+          if (prevButton) prevButton.disabled = currentPage === 1;
+          if (nextButton) nextButton.disabled = currentPage === pageCount;
+        };
+
+        if (prevButton) {
+          prevButton.addEventListener("click", () => {
+            if (currentPage > 1) {
+              currentPage--;
+              renderArchivePage();
+              archive.scrollIntoView({ behavior: "smooth", block: "start" });
+            }
+          });
+        }
+
+        if (nextButton) {
+          nextButton.addEventListener("click", () => {
+            const pageCount = Math.max(1, Math.ceil(sorted.length / perPage));
+            if (currentPage < pageCount) {
+              currentPage++;
+              renderArchivePage();
+              archive.scrollIntoView({ behavior: "smooth", block: "start" });
+            }
+          });
+        }
+
+        if (pageNumbers) {
+          pageNumbers.addEventListener("click", event => {
+            const button = event.target.closest("[data-guestbook-page]");
+            if (!button) return;
+            currentPage = Number(button.dataset.guestbookPage);
+            renderArchivePage();
+            archive.scrollIntoView({ behavior: "smooth", block: "start" });
+          });
+        }
+
+        renderArchivePage();
       }
     } catch (error) {
       renderLoadError(homeList || archive, error);
