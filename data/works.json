@@ -103,7 +103,7 @@
   {
     "id": 4,
     "title": "女子高生",
-    "cover": "assets/work-1.svg",
+    "cover": "assets/せんたくびよりロゴ.png",
     "categories": [
       "original",
       "prototype"
@@ -159,7 +159,7 @@
   {
     "id": 3,
     "title": "黒鷺玲音",
-    "cover": "assets/work-1.svg",
+    "cover": "assets/せんたくびよりロゴ.png",
     "categories": [
       "fanart",
       "prototype"
@@ -185,7 +185,7 @@
   {
     "id": 2,
     "title": "ゴースとかびるんるん",
-    "cover": "assets/work-1.svg",
+    "cover": "assets/せんたくびよりロゴ.png",
     "categories": [
       "fanart",
       "prototype"
@@ -211,7 +211,7 @@
   {
     "id": 1,
     "title": "ピカブー",
-    "cover": "assets/work-1.svg",
+    "cover": "assets/せんたくびよりロゴ.png",
     "categories": [
       "fanart",
       "prototype"
