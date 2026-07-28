@@ -50,17 +50,75 @@
       }
 
       if (archive) {
-        archive.innerHTML = sorted.map(item => `
-          <article class="archive-entry">
-            <header>
-              <h2>${escapeHtml(item.title)}</h2>
-              <time datetime="${escapeHtml(item.date)}">${escapeHtml(item.displayDate || item.date)}</time>
-            </header>
-            <p>${escapeHtml(item.body)}</p>
-            ${item.image ? `<img src="${escapeHtml(item.image)}" alt="${escapeHtml(item.imageAlt || item.title)}">` : ""}
-            ${item.category ? `<p class="entry-meta">カテゴリ：${escapeHtml(item.category)}</p>` : ""}
-          </article>
-        `).join("");
+        const perPage = 10;
+        let currentPage = 1;
+        const prevButton = document.getElementById("newsPrev");
+        const nextButton = document.getElementById("newsNext");
+        const pageNumbers = document.getElementById("newsPageNumbers");
+
+        const renderArchivePage = () => {
+          const pageCount = Math.max(1, Math.ceil(sorted.length / perPage));
+          currentPage = Math.min(currentPage, pageCount);
+
+          const start = (currentPage - 1) * perPage;
+          archive.innerHTML = sorted
+            .slice(start, start + perPage)
+            .map(item => `
+              <article class="archive-entry">
+                <header>
+                  <h2>${escapeHtml(item.title)}</h2>
+                  <time datetime="${escapeHtml(item.date)}">${escapeHtml(item.displayDate || item.date)}</time>
+                </header>
+                <p>${escapeHtml(item.body)}</p>
+                ${item.image ? `<img src="${escapeHtml(item.image)}" alt="${escapeHtml(item.imageAlt || item.title)}">` : ""}
+                ${item.category ? `<p class="entry-meta">カテゴリ：${escapeHtml(item.category)}</p>` : ""}
+              </article>
+            `)
+            .join("");
+
+          if (pageNumbers) {
+            pageNumbers.innerHTML = Array.from({ length: pageCount }, (_, index) => {
+              const page = index + 1;
+              return `<button type="button" data-news-page="${page}" class="${page === currentPage ? "is-current" : ""}" aria-label="${page}ページ">${page}</button>`;
+            }).join("");
+          }
+
+          if (prevButton) prevButton.disabled = currentPage === 1;
+          if (nextButton) nextButton.disabled = currentPage === pageCount;
+        };
+
+        if (prevButton) {
+          prevButton.addEventListener("click", () => {
+            if (currentPage > 1) {
+              currentPage--;
+              renderArchivePage();
+              archive.scrollIntoView({ behavior: "smooth", block: "start" });
+            }
+          });
+        }
+
+        if (nextButton) {
+          nextButton.addEventListener("click", () => {
+            const pageCount = Math.max(1, Math.ceil(sorted.length / perPage));
+            if (currentPage < pageCount) {
+              currentPage++;
+              renderArchivePage();
+              archive.scrollIntoView({ behavior: "smooth", block: "start" });
+            }
+          });
+        }
+
+        if (pageNumbers) {
+          pageNumbers.addEventListener("click", event => {
+            const button = event.target.closest("[data-news-page]");
+            if (!button) return;
+            currentPage = Number(button.dataset.newsPage);
+            renderArchivePage();
+            archive.scrollIntoView({ behavior: "smooth", block: "start" });
+          });
+        }
+
+        renderArchivePage();
       }
     } catch (error) {
       renderLoadError(homeList || archive, error);

@@ -1028,3 +1028,131 @@ main.container,
     padding: 6px 10px;
   }
 }
+
+
+/* v7: SNSリンクをSVGアイコンへ変更 */
+.icon-socials {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.icon-socials .icon-link {
+  width: 46px;
+  height: 46px;
+  display: grid;
+  place-items: center;
+  padding: 0;
+  color: var(--pink);
+  background: white;
+  border: 2px solid var(--pink);
+  border-radius: 50%;
+  text-decoration: none;
+  transition:
+    transform .18s ease,
+    background-color .18s ease,
+    color .18s ease,
+    box-shadow .18s ease;
+}
+
+.icon-socials .icon-link svg {
+  width: 22px;
+  height: 22px;
+  display: block;
+}
+
+.icon-socials .icon-link:hover,
+.icon-socials .icon-link:focus-visible {
+  color: white;
+  background: var(--pink);
+  transform: translateY(-3px) scale(1.06);
+  box-shadow: 0 8px 18px rgba(239, 120, 148, .28);
+}
+
+.sidebar-social.icon-socials {
+  margin-top: 30px;
+}
+
+.hero-social.icon-socials {
+  justify-content: flex-end;
+}
+
+@media (max-width: 860px) {
+  .hero-social.icon-socials {
+    justify-content: flex-start;
+  }
+}
+
+@media (max-width: 620px) {
+  .icon-socials {
+    gap: 9px;
+  }
+
+  .icon-socials .icon-link {
+    width: 42px;
+    height: 42px;
+  }
+
+  .icon-socials .icon-link svg {
+    width: 20px;
+    height: 20px;
+  }
+}
+
+
+/* v8: 近況ページを10件ごとにページ切り替え */
+.news-pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  margin-top: 22px;
+}
+
+.news-pagination > div {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 7px;
+}
+
+.news-pagination button {
+  min-width: 40px;
+  min-height: 40px;
+  padding: 7px 12px;
+  color: var(--blue);
+  background: white;
+  border: 1px solid var(--line);
+  border-radius: 999px;
+}
+
+.news-pagination button:hover,
+.news-pagination button:focus-visible {
+  color: var(--pink);
+  border-color: var(--pink);
+}
+
+.news-pagination button.is-current {
+  color: white;
+  background: var(--pink);
+  border-color: var(--pink);
+}
+
+.news-pagination button:disabled {
+  opacity: .4;
+  cursor: not-allowed;
+}
+
+@media (max-width: 620px) {
+  .news-pagination {
+    gap: 6px;
+  }
+
+  .news-pagination button {
+    min-width: 36px;
+    min-height: 36px;
+    padding: 6px 10px;
+  }
+}
