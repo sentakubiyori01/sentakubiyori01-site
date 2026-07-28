@@ -2,26 +2,25 @@
   {
     "id": 6,
     "title": "インキュバス君",
-    "cover": "assets/work-3.svg",
+    "cover": "assets/インキュバス君/インキュバス君_完成.png",
     "categories": [
-      "fanart",
-      "deformed",
-      "painted"
+      "original",
+      "prototype"
     ],
-    "categoryLabel": "二次創作",
-    "description": "イベント展示用に制作したデフォルメフィギュアです。",
-    "height": "約150mm",
+    "categoryLabel": "オリジナル",
+    "description": "WF2026S用に作成したデフォルメフィギュアです。手のひらに収まる丸さがキュート。インキュバス君はお友達がデザインしてくれたキャラクターです。ありがたく作らせていただいてます",
+    "height": "約70mm",
     "material": "光造形レジン",
     "year": "2026",
     "images": [
-      "assets/work-3.svg",
-      "assets/detail-2.svg",
-      "assets/detail-3.svg"
+      "assets/インキュバス君/インキュバス君_モデリング.png",
+      "assets/インキュバス君/インキュバス君_分割.png",
+      "assets/インキュバス君/インキュバス君_仮組.png"
     ],
     "imageLabels": [
-      "トップ",
-      "背面",
-      "3Dモデル"
+      "3Dモデリング",
+      "分割",
+      "仮組み"
     ],
     "timeline": [
       {
