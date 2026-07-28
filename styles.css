@@ -908,3 +908,18 @@ main.container,
     grid-template-columns: repeat(3, 1fr);
   }
 }
+
+
+.form-status {
+  min-height: 1.5em;
+  margin: 12px 0 0;
+  color: var(--blue);
+  font-weight: 700;
+}
+.load-error {
+  padding: 16px;
+  color: #9a3e55;
+  background: var(--pink-soft);
+  border: 1px solid var(--pink);
+  border-radius: 12px;
+}

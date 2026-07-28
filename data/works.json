@@ -1,0 +1,240 @@
+[
+  {
+    "id": 1,
+    "title": "女子高生",
+    "cover": "assets/work-1.svg",
+    "categories": [
+      "original",
+      "deformed",
+      "painted"
+    ],
+    "categoryLabel": "オリジナル",
+    "description": "デフォルメ女子高生フィギュアです。完成品写真、背面、3Dモデル、分割、仮組み、サフまで制作工程をまとめています。",
+    "height": "約120mm",
+    "material": "光造形レジン",
+    "year": "2026",
+    "images": [
+      "assets/detail-1.svg",
+      "assets/detail-2.svg",
+      "assets/detail-3.svg",
+      "assets/detail-4.svg",
+      "assets/detail-5.svg",
+      "assets/detail-6.svg"
+    ],
+    "imageLabels": [
+      "正面",
+      "背面",
+      "3Dモデル",
+      "分割",
+      "仮組み",
+      "サフ"
+    ],
+    "timeline": [
+      {
+        "date": "2026.07.01",
+        "label": "モデリング完了"
+      },
+      {
+        "date": "2026.07.03",
+        "label": "分割完了"
+      },
+      {
+        "date": "2026.07.05",
+        "label": "出力完了"
+      },
+      {
+        "date": "2026.07.08",
+        "label": "仮組み完了"
+      },
+      {
+        "date": "2026.07.10",
+        "label": "サフ完了"
+      },
+      {
+        "date": "2026.07.12",
+        "label": "完成"
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "title": "レイズ",
+    "cover": "assets/work-2.svg",
+    "categories": [
+      "original",
+      "deformed",
+      "prototype"
+    ],
+    "categoryLabel": "オリジナル",
+    "description": "制作中のオリジナルキャラクターです。現在は表面処理工程です。",
+    "height": "約130mm",
+    "material": "光造形レジン",
+    "year": "2026",
+    "images": [
+      "assets/work-2.svg",
+      "assets/detail-3.svg",
+      "assets/detail-4.svg",
+      "assets/detail-5.svg"
+    ],
+    "imageLabels": [
+      "トップ",
+      "3Dモデル",
+      "分割",
+      "仮組み"
+    ],
+    "timeline": [
+      {
+        "date": "2026.07.18",
+        "label": "モデリング完了"
+      },
+      {
+        "date": "2026.07.21",
+        "label": "分割完了"
+      },
+      {
+        "date": "2026.07.24",
+        "label": "出力完了"
+      },
+      {
+        "date": "2026.07.27",
+        "label": "仮組み完了"
+      }
+    ]
+  },
+  {
+    "id": 3,
+    "title": "小悪魔",
+    "cover": "assets/work-3.svg",
+    "categories": [
+      "fanart",
+      "deformed",
+      "painted"
+    ],
+    "categoryLabel": "二次創作",
+    "description": "イベント展示用に制作したデフォルメフィギュアです。",
+    "height": "約150mm",
+    "material": "光造形レジン",
+    "year": "2026",
+    "images": [
+      "assets/work-3.svg",
+      "assets/detail-2.svg",
+      "assets/detail-3.svg"
+    ],
+    "imageLabels": [
+      "トップ",
+      "背面",
+      "3Dモデル"
+    ],
+    "timeline": [
+      {
+        "date": "2026.05.10",
+        "label": "モデリング完了"
+      },
+      {
+        "date": "2026.05.21",
+        "label": "完成"
+      }
+    ]
+  },
+  {
+    "id": 4,
+    "title": "犬",
+    "cover": "assets/work-4.svg",
+    "categories": [
+      "original",
+      "deformed",
+      "prototype"
+    ],
+    "categoryLabel": "オリジナル",
+    "description": "飼い主を待つ姿をテーマにした小型フィギュアです。",
+    "height": "約90mm",
+    "material": "PLA / 石粉粘土",
+    "year": "2026",
+    "images": [
+      "assets/work-4.svg",
+      "assets/detail-6.svg"
+    ],
+    "imageLabels": [
+      "トップ",
+      "サフ"
+    ],
+    "timeline": [
+      {
+        "date": "2026.04.01",
+        "label": "造形開始"
+      },
+      {
+        "date": "2026.04.12",
+        "label": "完成"
+      }
+    ]
+  },
+  {
+    "id": 5,
+    "title": "ジャージ娘",
+    "cover": "assets/work-5.svg",
+    "categories": [
+      "original",
+      "scale",
+      "painted"
+    ],
+    "categoryLabel": "オリジナル",
+    "description": "12cmサイズで制作した等身寄りのオリジナル作品です。",
+    "height": "約120mm",
+    "material": "PLA",
+    "year": "2026",
+    "images": [
+      "assets/work-5.svg",
+      "assets/detail-4.svg"
+    ],
+    "imageLabels": [
+      "トップ",
+      "分割"
+    ],
+    "timeline": [
+      {
+        "date": "2026.03.02",
+        "label": "モデリング完了"
+      },
+      {
+        "date": "2026.03.16",
+        "label": "完成"
+      }
+    ]
+  },
+  {
+    "id": 6,
+    "title": "インキュバス",
+    "cover": "assets/work-6.svg",
+    "categories": [
+      "fanart",
+      "deformed",
+      "prototype"
+    ],
+    "categoryLabel": "二次創作",
+    "description": "ワンダーフェスティバル向けに制作した作品です。",
+    "height": "約150mm",
+    "material": "光造形レジン",
+    "year": "2026",
+    "images": [
+      "assets/work-6.svg",
+      "assets/detail-5.svg",
+      "assets/detail-6.svg"
+    ],
+    "imageLabels": [
+      "トップ",
+      "仮組み",
+      "サフ"
+    ],
+    "timeline": [
+      {
+        "date": "2026.06.20",
+        "label": "出力完了"
+      },
+      {
+        "date": "2026.07.12",
+        "label": "完成"
+      }
+    ]
+  }
+]
