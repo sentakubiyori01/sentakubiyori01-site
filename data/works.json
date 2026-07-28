@@ -1,5 +1,57 @@
 [
   {
+    "id": 8,
+    "title": "マサマサ今日のご飯",
+    "cover": "assets/GlintGravelさま_マサマサ今日のご飯/マサマサ今日のご飯_仮組.png",
+    "categories": [
+      "fanart",
+      "painted"
+    ],
+     "categoryLabel": "二次創作",
+    "description": "ディーラーGlintGravelさまのゼンゼスゾーンゼロの浅羽悠真。となモ9で購入しました。パーツ数は48なんですがとっても組み立てやすい。視線が追従する用の顔パーツが入っています。やれるのか？私に……",
+    "height": "横約150mm",
+    "material": "工場複製",
+    "year": "2026",
+    "images": [
+      "assets/GlintGravelさま_マサマサ今日のご飯/マサマサ今日のご飯_仮組.png"
+    ],
+    "imageLabels": [
+      "仮組み"
+    ],
+    "timeline": [
+      {
+        "date": "2026.07.27",
+        "label": "仮組み"
+      }
+    ]
+  },
+  {
+    "id": 7,
+    "title": "輝矢宗氏のミニフィギュア",
+    "cover": "assets/あしたはおやすみさま_輝矢宗氏のミニフィギュア/輝矢宗氏のミニフィギュア_仮組.png",
+    "categories": [
+      "fanart",
+      "painted"
+    ],
+     "categoryLabel": "二次創作",
+    "description": "ディーラーあしたはおやすみさまの18TRIP輝矢宗氏のミニフィギュアです。WF2026Sで購入しました。完成したらパッケージのまま飾れる天才のデザイン",
+    "height": "約60mm",
+    "material": "3Dプリンター出力品",
+    "year": "2026",
+    "images": [
+      "assets/あしたはおやすみさま_輝矢宗氏のミニフィギュア/輝矢宗氏のミニフィギュア_仮組.png"
+    ],
+    "imageLabels": [
+      "仮組み"
+    ],
+    "timeline": [
+      {
+        "date": "2026.07.27",
+        "label": "仮組み"
+      }
+    ]
+  },
+  {
     "id": 6,
     "title": "インキュバス君",
     "cover": "assets/インキュバス君/インキュバス君_完成.png",
