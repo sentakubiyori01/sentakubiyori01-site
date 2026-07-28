@@ -69,7 +69,7 @@
                   <h2>${escapeHtml(item.title)}</h2>
                   <time datetime="${escapeHtml(item.date)}">${escapeHtml(item.displayDate || item.date)}</time>
                 </header>
-                <p>${escapeHtml(item.body)}</p>
+                <p>${escapeHtml(item.body).replace(/\n/g, "<br>")}</p>
                 ${item.image ? `<img src="${escapeHtml(item.image)}" alt="${escapeHtml(item.imageAlt || item.title)}">` : ""}
                 ${item.category ? `<p class="entry-meta">カテゴリ：${escapeHtml(item.category)}</p>` : ""}
               </article>
