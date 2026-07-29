@@ -1,4 +1,30 @@
 [
+    {
+    "id": 9,
+    "title": "ペンギンの王,
+    "cover": "assets/依頼_ペンギンの王/ペンギンの王_モデリング.JPG",
+    "categories": [
+      "works",
+      "prototype"
+    ],
+     "categoryLabel": "ご依頼",
+    "description": "お友達の甥っ子のオリジナルキャラクターです。最高の依頼ですよこれは",
+    "height": "7mm",
+    "material": "水洗いレジン",
+    "year": "2026",
+    "images": [
+      "assets/依頼_ペンギンの王/ペンギンの王_モデリング.JPG"
+    ],
+    "imageLabels": [
+      "仮組み"
+    ],
+    "timeline": [
+      {
+        "date": "2026.07.27",
+        "label": "モデリング"
+      }
+    ]
+  },
   {
     "id": 8,
     "title": "マサマサ今日のご飯",
@@ -27,7 +53,7 @@
   },
   {
     "id": 7,
-    "title": "輝矢宗氏のミニフィギュア",
+    "title": "輝矢宗氏くん",
     "cover": "assets/あしたはおやすみさま_輝矢宗氏のミニフィギュア/輝矢宗氏のミニフィギュア_仮組.png",
     "categories": [
       "fanart",
