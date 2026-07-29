@@ -125,7 +125,32 @@
       }
     ]
   },
-  
+  {
+    "id": 5,
+    "title": "飼い主街の犬",
+    "cover": "assets/せんたくびよりロゴ.png",
+    "categories": [
+      "original",
+      "prototype"
+    ],
+    "categoryLabel": "オリジナル",
+    "description": "CoSPLAで作った大きめのフィギュアです。WF2026Sに作ったはずですが、分割の私が手を抜いたせいで人様に作ってもらえるようなレベルに達していなかったので没にしています。FFF式でのフィギュアの作り方noteをまとめるのでその時に完成させます",
+    "height": "70mm",
+    "material": "CoSPLA",
+    "year": "2026",
+    "images": [
+      "assets/せんたくびよりロゴ.png"
+    ],
+    "imageLabels": [
+      "正面"
+    ],
+    "timeline": [
+      {
+        "date": "2026.07.01",
+        "label": "モデリング完了"
+      }
+    ]
+  },  
   {
     "id": 4,
     "title": "女子高生",
