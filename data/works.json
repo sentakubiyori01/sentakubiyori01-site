@@ -114,20 +114,10 @@
     "material": "水洗いレジン",
     "year": "2026",
     "images": [
-      "assets/detail-1.svg",
-      "assets/detail-2.svg",
-      "assets/detail-3.svg",
-      "assets/detail-4.svg",
-      "assets/detail-5.svg",
-      "assets/detail-6.svg"
+      "assets/せんたくびよりロゴ.png"
     ],
     "imageLabels": [
-      "正面",
-      "背面",
-      "3Dモデル",
-      "分割",
-      "仮組み",
-      "サフ"
+      "正面"
     ],
     "timeline": [
       {
@@ -170,7 +160,7 @@
     "material": "CoSPLA",
     "year": "2026",
     "images": [
-      "assets/detail-1.svg"
+      "assets/せんたくびよりロゴ.png"
     ],
     "imageLabels": [
       "正面"
@@ -196,7 +186,7 @@
     "material": "CoSPLA",
     "year": "2026",
     "images": [
-      "assets/detail-1.svg"
+      "assets/せんたくびよりロゴ.png"
     ],
     "imageLabels": [
       "正面"
@@ -222,7 +212,7 @@
     "material": "PLA",
     "year": "2026",
     "images": [
-      "assets/detail-1.svg"
+      "assets/せんたくびよりロゴ.png"
     ],
     "imageLabels": [
       "正面"
