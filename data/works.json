@@ -160,7 +160,7 @@
   {
     "id": 4,
     "title": "女子高生",
-    "cover": "assets/せんたくびよりロゴ.png",
+    "cover": "assets/女子高生さん/女子高生さん_正面.JPG",
     "categories": [
       "original",
       "prototype"
@@ -171,10 +171,16 @@
     "material": "水洗いレジン",
     "year": "2026",
     "images": [
-      "assets/せんたくびよりロゴ.png"
+      "assets/女子高生さん/女子高生さん_正面.JPG",
+      "assets/女子高生さん/女子高生さん_左斜め.JPG",
+      "assets/女子高生さん/女子高生さん_右斜め.JPG",
+      "assets/女子高生さん/女子高生さん_背面.JPG"
     ],
     "imageLabels": [
-      "正面"
+      "正面",
+      "左斜め",
+      "右斜め",
+      "背面"
     ],
     "timeline": [
       {
@@ -258,7 +264,7 @@
   {
     "id": 1,
     "title": "ピカブー",
-    "cover": "assets/せんたくびよりロゴ.png",
+    "cover": "assets/ピカブ―/ピカブ―_正面.JPG",
     "categories": [
       "fanart",
       "prototype"
@@ -269,10 +275,16 @@
     "material": "PLA",
     "year": "2026",
     "images": [
-      "assets/せんたくびよりロゴ.png"
+      "assets/ピカブ―/ピカブ―_正面.JPG",
+      "assets/ピカブ―/ピカブ―_左.JPG",
+      "assets/ピカブ―/ピカブ―_右.JPG",
+      "assets/ピカブ―/ピカブ―_背面.JPG"
     ],
     "imageLabels": [
-      "正面"
+      "正面",
+      "左",
+      "右",
+      "背面"
     ],
     "timeline": [
       {
