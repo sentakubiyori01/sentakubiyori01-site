@@ -133,8 +133,8 @@
   },
   {
     "id": 5,
-    "title": "飼い主待ちの犬",
-    "cover": "assets/せんたくびよりロゴ.png",
+    "title": "待ち合わせの犬",
+    "cover": "assets/待ち合わせの犬/待ち合わせの犬_仮出力.jpg",
     "categories": [
       "original",
       "prototype"
@@ -145,15 +145,22 @@
     "material": "CoSPLA",
     "year": "2026",
     "images": [
-      "assets/せんたくびよりロゴ.png"
+      "assets/待ち合わせの犬/待ち合わせの犬_モデリング.jpg",
+      "assets/待ち合わせの犬/待ち合わせの犬_仮出力.jpg",
     ],
     "imageLabels": [
-      "正面"
+      "モデリング",
+      "仮出力",
     ],
     "timeline": [
       {
-        "date": "2026.07.01",
+        "date": "2026.06.01",
         "label": "モデリング完了"
+      },
+    "timeline": [
+      {
+        "date": "2026.06.21",
+        "label": "仮出力"
       }
     ]
   },  
@@ -171,12 +178,16 @@
     "material": "水洗いレジン",
     "year": "2026",
     "images": [
+      "assets/女子高生さん/女子高生さん_モデリング.jpg",
+      "assets/女子高生さん/女子高生さん_仮組み.jpg"
       "assets/女子高生さん/女子高生さん_正面.JPG",
       "assets/女子高生さん/女子高生さん_左斜め.JPG",
       "assets/女子高生さん/女子高生さん_右斜め.JPG",
       "assets/女子高生さん/女子高生さん_背面.JPG"
     ],
     "imageLabels": [
+      "モデリング",
+      "仮組み",
       "正面",
       "左斜め",
       "右斜め",
@@ -212,7 +223,7 @@
   {
     "id": 3,
     "title": "黒鷺玲音",
-    "cover": "assets/せんたくびよりロゴ.png",
+    "cover": "assets/レオ君/レオ君_原型正面.jpg",
     "categories": [
       "fanart",
       "prototype"
@@ -223,10 +234,14 @@
     "material": "CoSPLA",
     "year": "2026",
     "images": [
-      "assets/せんたくびよりロゴ.png"
+      "assets/レオ君/レオ君_モデリング.jpg",
+      "assets/レオ君/レオ君_原型正面.jpg",
+      "assets/レオ君/レオ君_原型斜め後ろ.jpg"
     ],
     "imageLabels": [
-      "正面"
+      "モデリング",
+      "原型正面",
+      "原型斜め後ろ"
     ],
     "timeline": [
       {
@@ -238,7 +253,7 @@
   {
     "id": 2,
     "title": "ゴースとかびるんるん",
-    "cover": "assets/せんたくびよりロゴ.png",
+    "cover": "assets/かびるんるんとゴース/ゴース.jpg",
     "categories": [
       "fanart",
       "prototype"
@@ -249,16 +264,23 @@
     "material": "CoSPLA",
     "year": "2026",
     "images": [
-      "assets/せんたくびよりロゴ.png"
+      "assets/かびるんるんとゴース/ゴース.jpg",
+      "assets/かびるんるんとゴース/かびるんるん.jpg"
     ],
     "imageLabels": [
-      "正面"
+      "ゴース",
+      ”かびるんるん”
     ],
     "timeline": [
       {
-        "date": "2026.07.01",
-        "label": "モデリング完了"
-      }
+        "date": "2026.05.15",
+        "label": "かびるんるん完成"
+      },
+    "timeline": [
+      {
+        "date": "2026.05.08",
+        "label": "ゴース完成"
+      },
     ]
   },
   {
@@ -288,8 +310,8 @@
     ],
     "timeline": [
       {
-        "date": "2026.07.01",
-        "label": "モデリング完了"
+        "date": "2026.03.10",
+        "label": "完成"
       }
     ]
   }
